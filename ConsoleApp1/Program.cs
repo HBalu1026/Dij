@@ -27,7 +27,7 @@ namespace ConsoleApp1
 
         static void Main(string[] args)
         {
-            string[] fajl = StreamReader('nobel.csv');
+            string[] fajl = File.ReadAllLines("nobel.csv");
             List<Adatok> adatokLista = new List<Adatok>();
             for (int i = 1; i < fajl.Length; i++)
             {

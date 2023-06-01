@@ -32,7 +32,7 @@ namespace ConsoleApp1
             for (int i = 1; i < fajl.Length; i++)
             {
                 string[] splitelt = fajl[i].Split(';');
-                adatokLista.Add(Convert.ToInt32(splitelt[0]), splitelt[1], splitelt[2], splitelt[3]);
+                adatokLista.Add(new Adatok(Convert.ToInt32(splitelt[0]), splitelt[1], splitelt[2], splitelt[3]));
             }
 
             //3
